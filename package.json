@@ -1,0 +1,27 @@
+{
+  "name": "react-sketch-piano",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Julia Rechkunova <jughosta@gmail.com>",
+  "license": "MIT",
+  "skpm": {
+    "main": "react-sketch-piano.sketchplugin",
+    "manifest": "src/manifest.json"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "render": "skpm-build --watch --run",
+    "render:once": "skpm-build --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.2.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^15.4.2",
+    "react-sketchapp": "^1.0.0",
+    "react-test-renderer": "^15.4.2"
+  }
+}
